@@ -150,7 +150,7 @@ def check_content_type(media_type):
         media_type (str): The expected media type (e.g., 'application/json').
 
     Raises:
-        abort: If the Content-Type does not match the expected media type, 
+        abort: If the Content-Type does not match the expected media type,
         a 415 error is returned.
     """
     content_type = request.headers.get("Content-Type")
