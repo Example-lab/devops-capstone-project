@@ -146,13 +146,12 @@ def delete_accounts(account_id):
 def check_content_type(media_type):
     """
     Ensures that the content type of the request matches the expected media type.
-    
     Args:
         media_type (str): The expected media type (e.g., 'application/json').
 
     Raises:
         abort: If the Content-Type does not match the expected media type, 
-               a 415 error is returned.
+        a 415 error is returned.
     """
     content_type = request.headers.get("Content-Type")
     if content_type and content_type == media_type:
